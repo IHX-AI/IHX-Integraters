@@ -8,7 +8,6 @@ files=[
   ('document',('<name>.pdf',open('<path-to-file>.pdf','rb'),'application/pdf'))
 ]
 headers = {
-  'Content-Type': 'multipart/form-data',
   'Accept': 'application/json',
   'x-api-key': '<api-key>'
 }
