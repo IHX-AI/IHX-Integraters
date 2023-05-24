@@ -27,7 +27,7 @@ def authorize(
             "Content-Type": "application/x-www-form-urlencoded",
         }
 
-        response = requests.request("POST", identity_url, headers=headers, data=payload)
+        response = requests.request("POST", identity_url, headers=headers, data=payload,verify=False)
         print("Authorizer Response Code")
         print(response.status_code)
         if response.status_code == 200:
@@ -73,7 +73,7 @@ def call_dc_api(url, access_token, api_key, payload, file_path):
         }
 
         response = requests.request(
-            "POST", url, headers=headers, data=payload, files=files
+            "POST", url, headers=headers, data=payload, files=files,verify=False
         )
         if response.status_code == 200:
             print("Calling DC Successful")
