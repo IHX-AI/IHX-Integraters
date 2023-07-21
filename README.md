@@ -45,3 +45,26 @@ pip install -r requirements.txt
 ```bash
 python sample_request.py
 ```
+
+### C Sharp
+
+> Navigate to the Python folder
+
+```bash
+cd IHX-Integraters/<Service_Name>/C-Sharp
+```
+
+> Run the following commands to create a project (You already need to have dotnet installed)
+
+```bash
+dotnet new console
+mv sample_request.cs Program.cs
+dotnet add package Newtonsoft.Json
+```
+
+> Fill in the required credentials in the code and Run the code using the following command
+
+```bash
+dotnet build
+dotnet run
+```
