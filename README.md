@@ -60,6 +60,7 @@ cd IHX-Integraters/<Service_Name>/C-Sharp
 dotnet new console
 mv sample_request.cs Program.cs
 dotnet add package Newtonsoft.Json
+dotnet add package SixLabors.ImageSharp
 ```
 
 > Fill in the required credentials in the code and Run the code using the following command
